@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --icon=logoNJU.ico --add-data "config.json;." serialport.py
