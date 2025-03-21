@@ -121,10 +121,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
 
     # 发送按钮按下
     def SendButton_clicked(self):
-        ### 获取频率设置 ###
+        ### 获取adc频率设置 ###
         try:
             freq_value = self.Freq_set.toPlainText().strip()  # 获取并去除空格
-            self.msg_log.insertPlainText(f"输入的频率值: {freq_value}kHz.\n")  # 调试信息
+            self.msg_log.insertPlainText(f"输入的adc采样频率值: {freq_value}kHz.\n")  # 调试信息
             if not freq_value.isdigit():  # 检查是否为正整数
                 raise ValueError("频率必须是一个有效的正整数")
             freq_value = int(freq_value)
@@ -145,8 +145,61 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         except Exception as e:
             self.msg_log.insertPlainText(f"发生错误: {e}\n")
             return
+        ### 获取pct频率设置 ###
+        try:
+            freq_pct_value = self.Freq_set_pct.toPlainText().strip()  # 获取并去除空格
+            self.msg_log.insertPlainText(f"输入的pct频率值: {freq_pct_value}kHz.\n")  # 调试信息
+            if not freq_pct_value.isdigit():  # 检查是否为正整数
+                raise ValueError("频率必须是一个有效的正整数")
+            freq_pct_value = int(freq_pct_value)
+            if freq_pct_value <= 0:
+                raise ValueError("频率必须是一个正的非零整数")
+            f_scan_pct_code = int(250 / freq_pct_value)
+            if f_scan_pct_code < 0:
+                raise ValueError("计算出的扫描代码无效，可能是由于频率设置错误")
+            data_f_scan_pct_code = hex((0xa5 << 32) | (f_scan_pct_code << 0))
+            data_f_scan_pct_code = data_f_scan_pct_code[2:]  # 去掉 '0x' 前缀
+            # 确保生成的十六进制字符串为偶数长度
+            if len(data_f_scan_pct_code) % 2 != 0:
+                data_f_scan_pct_code = '0' + data_f_scan_pct_code  # 补全为偶数长度
+            byte_data_f_scan_pct_code = bytes.fromhex(data_f_scan_pct_code)  # 转换为字节
+        except ValueError as ve:
+            self.msg_log.insertPlainText(f"输入错误: {ve}\n")
+            return
+        except Exception as e:
+            self.msg_log.insertPlainText(f"发生错误: {e}\n")
+            return
+        ### 获取dac频率设置 ###
+        try:
+            freq_scan_value = self.Freq_set_scan.toPlainText().strip()  # 获取并去除空格
+            self.msg_log.insertPlainText(f"输入的scan步进频率值: {freq_scan_value}kHz.\n")  # 调试信息
+            if not freq_scan_value.isdigit():  # 检查是否为正整数
+                raise ValueError("频率必须是一个有效的正整数")
+            freq_scan_value = int(freq_scan_value)
+            if freq_scan_value <= 0:
+                raise ValueError("频率必须是一个正的非零整数")
+            f_scan_dac_code = int(25000 / freq_scan_value)
+            if f_scan_dac_code < 0:
+                raise ValueError("计算出的扫描代码无效，可能是由于频率设置错误")
+            data_f_scan_dac_code = hex((0xcf << 32) | (f_scan_dac_code << 0))
+            data_f_scan_dac_code = data_f_scan_dac_code[2:]  # 去掉 '0x' 前缀
+            # 确保生成的十六进制字符串为偶数长度
+            if len(data_f_scan_dac_code) % 2 != 0:
+                data_f_scan_dac_code = '0' + data_f_scan_dac_code  # 补全为偶数长度
+            byte_data_f_scan_dac_code = bytes.fromhex(data_f_scan_dac_code)  # 转换为字节
+        except ValueError as ve:
+            self.msg_log.insertPlainText(f"输入错误: {ve}\n")
+            return
+        except Exception as e:
+            self.msg_log.insertPlainText(f"发生错误: {e}\n")
+            return
         ### 设备参数计算 ###
-        Voltage_transcode = 10000/(0x3fff) # each_code /mV
+        Voltage_transcode = 5000/(0xffff) # each_code /mV
+        ### 获取ad0的数据 拼成指令帧 ###
+        ad0_thre = int(float(self.AD0_thre_text.toPlainText()) * 1000 / Voltage_transcode)
+        ad_threshold = hex((0xa0 << 32) | (ad0_thre << 0))
+        ad_threshold = ad_threshold[2:]
+        byte_ad_threshold = bytes.fromhex(ad_threshold)
         ### 获取da2的数据 拼成指令帧 ###
         # B0 min max
         da2_min = int(float(self.DA2min_text.toPlainText()) * 1000 / Voltage_transcode)
@@ -160,10 +213,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         data_da2_step = data_da2_step[2:]
         byte_data_da2_step = bytes.fromhex(data_da2_step)
         # B9 00 00 delta
-        da2_delta = int(float(self.DA2delta_text.toPlainText()) * 1000 / Voltage_transcode)
-        data_da2_delta = hex((0xb9 << 32) | (0 << 16) | (da2_delta << 0))
-        data_da2_delta = data_da2_delta[2:]
-        byte_data_da2_delta = bytes.fromhex(data_da2_delta)
+        # da2_delta = int(float(self.DA2delta_text.toPlainText()) * 1000 / Voltage_transcode)
+        # data_da2_delta = hex((0xb9 << 32) | (0 << 16) | (da2_delta << 0))
+        # data_da2_delta = data_da2_delta[2:]
+        # byte_data_da2_delta = bytes.fromhex(data_da2_delta)
         ### 获取da0的数据 拼成指令帧 ###
         # D1 min max
         da0_min = int(float(self.DA0min_text.toPlainText()) * 1000 / Voltage_transcode)
@@ -200,10 +253,14 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         self.msg_log.insertPlainText(f'时间: {current_time}')
         self.msg_log.insertPlainText('\n')
         self.Com_Send_Data(byte_data_f_scan_code)
+        self.Com_Send_Data(byte_data_f_scan_dac_code)
+        self.Com_Send_Data(byte_data_f_scan_pct_code)
+
+        self.Com_Send_Data(byte_ad_threshold)
 
         self.Com_Send_Data(byte_data_da2_minmax)
         self.Com_Send_Data(byte_data_da2_step)
-        self.Com_Send_Data(byte_data_da2_delta)
+        # self.Com_Send_Data(byte_data_da2_delta)
 
         self.Com_Send_Data(byte_data_da0_minmax)
         self.Com_Send_Data(byte_data_da0_step)
@@ -260,7 +317,9 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
         ### 开启UDP接收 ###
         self.Udp_open_after_sys_start()
         ### 数据接收成功--关闭系统 ###
-        QTimer.singleShot(1000, self.Sys_Close_Button_clicked)
+        self.send_open_sys.setEnabled(True)
+        self.send_close_sys.setEnabled(True)
+        # QTimer.singleShot(1000, self.Sys_Close_Button_clicked)
 
     # 建立UDP连接
     def Udp_open_after_sys_start(self):
@@ -317,10 +376,10 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     for i in range(1,51,1): # 1234 XXXX XXXX 5678 XXXX XXXX XXXX XXXX
                         single_msg = datagram[(i - 1)*16: i*16]
                         node_num_t   = float(int.from_bytes(single_msg[2:6], byteorder='big') * time_per_node) # 单位:s
-                        node_AD0   = float(int.from_bytes(single_msg[8:10], byteorder='big') * 10 / 0x3fff) # 单位:V
-                        node_DA2   = float(int.from_bytes(single_msg[10:12], byteorder='big') * 10 / 0x3fff)
-                        node_DA0   = float(int.from_bytes(single_msg[12:14], byteorder='big') * 10 / 0x3fff)
-                        node_DA1   = float(int.from_bytes(single_msg[14:16], byteorder='big') * 10 / 0x3fff)
+                        node_AD0   = float(int.from_bytes(single_msg[8:10],  byteorder='big') * 5 / 0xffff) # 单位:V
+                        node_DA2   = float(int.from_bytes(single_msg[10:12], byteorder='big') * 5 / 0xffff)
+                        node_DA0   = float(int.from_bytes(single_msg[12:14], byteorder='big') * 5 / 0xffff)
+                        node_DA1   = float(int.from_bytes(single_msg[14:16], byteorder='big') * 5 / 0xffff)
                         storage_array.append([node_num_t,node_AD0,node_DA2,node_DA0,node_DA1])
                     using_counter = using_counter + 1
                 except Exception as e:

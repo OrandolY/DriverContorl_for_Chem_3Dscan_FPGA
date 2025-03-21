@@ -40,7 +40,7 @@
      <rect>
       <x>30</x>
       <y>130</y>
-      <width>341</width>
+      <width>311</width>
       <height>311</height>
      </rect>
     </property>
@@ -55,15 +55,15 @@
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>339</width>
+       <width>309</width>
        <height>309</height>
       </rect>
      </property>
      <widget class="QPushButton" name="open_serial">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>130</y>
+        <x>150</x>
+        <y>120</y>
         <width>121</width>
         <height>61</height>
        </rect>
@@ -83,8 +83,8 @@
      <widget class="QPushButton" name="close_serial">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>220</y>
+        <x>150</x>
+        <y>210</y>
         <width>121</width>
         <height>61</height>
        </rect>
@@ -104,8 +104,8 @@
      <widget class="QPushButton" name="refresh_port">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>40</y>
+        <x>150</x>
+        <y>30</y>
         <width>121</width>
         <height>61</height>
        </rect>
@@ -125,7 +125,7 @@
      <widget class="QComboBox" name="ports_list">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>60</y>
         <width>111</width>
         <height>41</height>
@@ -135,7 +135,7 @@
      <widget class="QLabel" name="label_portselect">
       <property name="geometry">
        <rect>
-        <x>43</x>
+        <x>13</x>
         <y>21</y>
         <width>111</width>
         <height>41</height>
@@ -148,7 +148,7 @@
      <widget class="QTextBrowser" name="Com_isOpenOrNot_Label">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>210</y>
         <width>111</width>
         <height>41</height>
@@ -165,7 +165,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="label_portbaud">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>100</y>
         <width>101</width>
         <height>41</height>
@@ -184,7 +184,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextEdit" name="baud_set_text">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>10</x>
         <y>140</y>
         <width>111</width>
         <height>41</height>
@@ -203,9 +203,9 @@ p, li { white-space: pre-wrap; }
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>350</x>
       <y>129</y>
-      <width>751</width>
+      <width>801</width>
       <height>401</height>
      </rect>
     </property>
@@ -245,7 +245,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_DA2_min">
@@ -314,10 +314,10 @@ p, li { white-space: pre-wrap; }
     <widget class="QPushButton" name="send_setting">
      <property name="geometry">
       <rect>
-       <x>550</x>
-       <y>120</y>
-       <width>151</width>
-       <height>61</height>
+       <x>490</x>
+       <y>270</y>
+       <width>301</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="text">
@@ -346,7 +346,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="DA2step_text">
@@ -371,7 +371,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0.05&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_DA0_min">
@@ -417,7 +417,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt;&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="DA0max_text">
@@ -442,7 +442,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="DA0_max_text">
@@ -469,8 +469,8 @@ p, li { white-space: pre-wrap; }
     <widget class="QTextEdit" name="DA1min_text">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>50</y>
+       <x>303</x>
+       <y>49</y>
        <width>111</width>
        <height>51</height>
       </rect>
@@ -488,14 +488,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SimSun'; font-size:9pt;&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="DA1max_text">
      <property name="geometry">
       <rect>
-       <x>277</x>
-       <y>151</y>
+       <x>300</x>
+       <y>150</y>
        <width>111</width>
        <height>51</height>
       </rect>
@@ -513,14 +513,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="DA1_max_text">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>120</y>
+       <x>303</x>
+       <y>119</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -540,8 +540,8 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="label_DA1_min">
      <property name="geometry">
       <rect>
-       <x>283</x>
-       <y>19</y>
+       <x>306</x>
+       <y>18</y>
        <width>101</width>
        <height>31</height>
       </rect>
@@ -556,27 +556,6 @@ p, li { white-space: pre-wrap; }
      </property>
      <property name="text">
       <string>DA1_min/V</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_port_2">
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>340</y>
-       <width>221</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Times New Roman</family>
-       <pointsize>12</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>单位/V 范围 0~10V</string>
      </property>
     </widget>
     <widget class="QLabel" name="DA0_delta_text">
@@ -622,14 +601,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0.05&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="DA1step_text">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>250</y>
+       <x>303</x>
+       <y>249</y>
        <width>111</width>
        <height>51</height>
       </rect>
@@ -647,14 +626,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0.05&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="DA1_delta_text">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>220</y>
+       <x>303</x>
+       <y>219</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -671,12 +650,38 @@ p, li { white-space: pre-wrap; }
       <string>DA1_step/V</string>
      </property>
     </widget>
-    <widget class="QLabel" name="DA2_step_text_2">
+    <widget class="QPushButton" name="send_close_sys">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>310</y>
-       <width>111</width>
+       <x>490</x>
+       <y>330</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关闭系统</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="send_open_sys">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>330</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打开系统</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="freq_label">
+     <property name="geometry">
+      <rect>
+       <x>493</x>
+       <y>89</y>
+       <width>301</width>
        <height>31</height>
       </rect>
      </property>
@@ -689,10 +694,35 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>DA2_delta/V</string>
+      <string>Freq_adc/kHz</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="DA2delta_text">
+    <widget class="QTextEdit" name="Freq_set">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>120</y>
+       <width>291</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;100&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="AD0_thre_text">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -714,41 +744,15 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;0.1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="send_close_sys">
+    <widget class="QLabel" name="DA0_delta_text_2">
      <property name="geometry">
       <rect>
-       <x>550</x>
-       <y>220</y>
-       <width>151</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>关闭系统</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="send_open_sys">
-     <property name="geometry">
-      <rect>
-       <x>550</x>
-       <y>320</y>
-       <width>151</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>打开系统</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="freq_label">
-     <property name="geometry">
-      <rect>
-       <x>560</x>
-       <y>20</y>
-       <width>131</width>
+       <x>10</x>
+       <y>310</y>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -761,15 +765,41 @@ p, li { white-space: pre-wrap; }
       </font>
      </property>
      <property name="text">
-      <string>Freq/kHz</string>
+      <string>AD0_thre/V</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="Freq_set">
+    <widget class="Line" name="line">
      <property name="geometry">
       <rect>
-       <x>557</x>
-       <y>51</y>
-       <width>141</width>
+       <x>130</x>
+       <y>0</y>
+       <width>20</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>0</y>
+       <width>20</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="Freq_set_scan">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>200</y>
+       <width>291</width>
        <height>51</height>
       </rect>
      </property>
@@ -786,7 +816,101 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;100&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="freq_label_2">
+     <property name="geometry">
+      <rect>
+       <x>493</x>
+       <y>169</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Freq__scan/kHz</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="Freq_set_pct">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>40</y>
+       <width>291</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman','Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;100&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="freq_label_3">
+     <property name="geometry">
+      <rect>
+       <x>493</x>
+       <y>9</y>
+       <width>301</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Freq__sinwave/kHz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_port_2">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>330</y>
+       <width>291</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>单位/V 范围 0~10V</string>
      </property>
     </widget>
    </widget>
@@ -845,7 +969,7 @@ p, li { white-space: pre-wrap; }
    <widget class="QLabel" name="label_port_3">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>530</x>
       <y>60</y>
       <width>191</width>
       <height>71</height>
@@ -869,7 +993,7 @@ p, li { white-space: pre-wrap; }
       <x>30</x>
       <y>549</y>
       <width>1121</width>
-      <height>121</height>
+      <height>181</height>
      </rect>
     </property>
     <property name="autoFillBackground">
@@ -1065,8 +1189,8 @@ p, li { white-space: pre-wrap; }
     <widget class="QLabel" name="label_local_storage">
      <property name="geometry">
       <rect>
-       <x>580</x>
-       <y>10</y>
+       <x>10</x>
+       <y>130</y>
        <width>151</width>
        <height>41</height>
       </rect>
@@ -1086,9 +1210,9 @@ p, li { white-space: pre-wrap; }
     <widget class="QTextEdit" name="local_storage_text">
      <property name="geometry">
       <rect>
-       <x>730</x>
-       <y>10</y>
-       <width>371</width>
+       <x>160</x>
+       <y>130</y>
+       <width>941</width>
        <height>41</height>
       </rect>
      </property>
@@ -1105,14 +1229,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman','Times New Roman';&quot;&gt;D:\recvdata&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;C:\Users\Orandol\Desktop\用于三维电化学成像的FPGA软件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_storage_time">
      <property name="geometry">
       <rect>
        <x>580</x>
-       <y>70</y>
+       <y>40</y>
        <width>151</width>
        <height>41</height>
       </rect>
@@ -1133,7 +1257,7 @@ p, li { white-space: pre-wrap; }
      <property name="geometry">
       <rect>
        <x>730</x>
-       <y>70</y>
+       <y>40</y>
        <width>371</width>
        <height>41</height>
       </rect>
@@ -1159,7 +1283,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>660</y>
+      <y>710</y>
       <width>631</width>
       <height>71</height>
      </rect>
